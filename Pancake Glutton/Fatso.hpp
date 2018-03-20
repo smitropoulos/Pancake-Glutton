@@ -37,6 +37,6 @@ public:
 
 };
 
-bool ValueCmp(Fatso  & a, Fatso  & b)	;
+bool ValueCmp(Fatso  & a, Fatso  & b);
 
 #endif /* Fatso_hpp */
