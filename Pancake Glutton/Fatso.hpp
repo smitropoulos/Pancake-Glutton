@@ -13,6 +13,7 @@
 #include <iostream>
 
 class Fatso{
+	friend bool ValueCmp(Fatso & a, Fatso & b)	;
 private:
 	std::string _name = "";
 	unsigned int _pancakesEaten = 0;
@@ -35,5 +36,7 @@ public:
 
 
 };
+
+bool ValueCmp(Fatso  & a, Fatso  & b)	;
 
 #endif /* Fatso_hpp */

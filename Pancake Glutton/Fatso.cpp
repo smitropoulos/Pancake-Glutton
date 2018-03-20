@@ -20,3 +20,7 @@ void Fatso::setOrder(unsigned int order){_order=order;};
 void Fatso::setPancakesEaten(unsigned int pancakesEaten){_pancakesEaten=pancakesEaten;}
 void Fatso::setName(std::string name){_name=name;}
 
+bool ValueCmp(Fatso & a, Fatso & b)		//need to define a comparator for the classes.
+{
+	return a.getPancakesEaten() < b.getPancakesEaten();
+}

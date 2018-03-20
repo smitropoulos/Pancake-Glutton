@@ -10,10 +10,6 @@
 #include "Fatso.hpp"
 #include <algorithm>
 
-bool ValueCmp(Fatso & a, Fatso & b)		//need to define a comparator for the classes.
-{
-	return a.getPancakesEaten() < b.getPancakesEaten();
-}
 
 
 int main(int argc, const char * argv[]) {
