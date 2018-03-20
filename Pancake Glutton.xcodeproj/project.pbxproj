@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7D40E5CA20614532004E480E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D40E5C920614532004E480E /* main.cpp */; };
+		7D40E5D220614563004E480E /* Fatso.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D40E5D020614563004E480E /* Fatso.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		7D40E5C620614532004E480E /* Pancake Glutton */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Pancake Glutton"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D40E5C920614532004E480E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		7D40E5D020614563004E480E /* Fatso.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Fatso.cpp; sourceTree = "<group>"; };
+		7D40E5D120614563004E480E /* Fatso.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Fatso.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				7D40E5C920614532004E480E /* main.cpp */,
+				7D40E5D020614563004E480E /* Fatso.cpp */,
+				7D40E5D120614563004E480E /* Fatso.hpp */,
 			);
 			path = "Pancake Glutton";
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D40E5CA20614532004E480E /* main.cpp in Sources */,
+				7D40E5D220614563004E480E /* Fatso.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,9 +7,45 @@
 //
 
 #include <iostream>
+#include "Fatso.hpp"
+#include <algorithm>
+
+bool ValueCmp(Fatso & a, Fatso & b)		//need to define a comparator for the classes.
+{
+	return a.getPancakesEaten() < b.getPancakesEaten();
+}
+
 
 int main(int argc, const char * argv[]) {
-	// insert code here...
-	std::cout << "Hello, World!\n";
-	return 0;
+
+	Fatso arrayOfpeople[10];
+	int numberOfPeople = 3;
+
+	for (int i =0 ; i < numberOfPeople ; i++){
+		std::cout<<"Please input a name and the number of pancakes: ";
+		std::string name;
+		unsigned int pancakes;
+		std::cin>>name>>pancakes;
+		arrayOfpeople[i].setName(name);
+		arrayOfpeople[i].setPancakesEaten(pancakes);
+		arrayOfpeople[i].setOrder(i);
+		std::cout<<std::endl;
+
+	}
+
+
+	std::sort(arrayOfpeople, arrayOfpeople + numberOfPeople, ValueCmp);	//STL sort super useful shit
+
+	for (int i =0 ; i < numberOfPeople ; i++){
+		std::cout<<
+		arrayOfpeople[i].getName()
+		<<" "
+		<<arrayOfpeople[i].getPancakesEaten()
+		<<" "
+		<<arrayOfpeople[i].getOrder()
+		<<std::endl;
+
+	}
+
+		return 0;
 }
